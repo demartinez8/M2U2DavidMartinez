@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="image/fimlm.png">
+	<link rel="icon" href="image/fimlm.png">
+    
+    <title>Introducción a la Programación: Algoritmos y Diagramas de Flujo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="container form-container">
+    <div class="row">
+        <div class="col-md-6 form-1">
+            <h3>
+                Ejercicio 1
+                <b style="float: right;"><img src="image/fimlm.png" width="45"></b>
+            </h3>
+            <hr>
+            <p>Crear un algoritmo que le permita al usuario ingresar :</p>
+            <p>
+            <ul>
+                <li>Nombre de un estudiante.</li>
+                <li>Cantidad de materias o asignaturas a matricular.</li>
+                <li>Valor de cada materia o asignatura.</li>
+                <li>Valor de la papelería: que tiene un costo fijo de <b>$20.000</b> y el carné con valor de <b>$8.000</b>.</li>
+                <li>Descuento del <b>20%</b> sobre el costo de las materias.</li>
+            </ul>
+            </p>
+            <p>Por medio del algoritmo imprimir el valor total de las materias que matriculó el estudiante con el
+                descuento del <b>20%</b> más los costos fijos.
+            </p>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del Estudiante :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="nombre_estudiante" onkeypress="return ValidaSoloTexto();">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Cantidad de Materias :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="cantidad_materias" onkeypress="return ValidaSoloNumeros();" maxlength="2">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Valor por Materia :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="valor_materia" onkeypress="return ValidaSoloNumeros();" maxlength="7">
+                </div>
+
+                <div class="mb-1 row" id="respuesta_ejercicio1"></div>
+                <div class="mb-4 row" id="respuestafinal_ejercicio1"></div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="image/preload.gif" width="20" id="preload_ejercicio1" style="display: none;">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="hidden" id="guardaTotal" value="0">
+                            <input type="button" class="btnSubmit" value="Calcular" id="ejercicio1">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="button" class="btnSubmit" value="Borrar" id="reset_ejercicio1">
+                        </div>
+                        <div class="col-md-4">
+                            <a href="image/DF_Ejercicio1_U2M2.png" class="btn btn-dark btn-md btn-block btnSubmit" target="_blank">Diagrama de Flujo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0">
+                    <center><b class="complete">Complete los campos obligatorios (*) para continuar.</b></center>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 form-2">
+            <h3>
+                Ejercicio 2
+                <b style="float: right;"><img src="image/codigo.png" width="40"></b>
+            </h3>
+            <hr>
+            <p>Desarrolle un algoritmo que permita :</p>
+            <p>
+            <ul>
+                <li>Leer cuatro valores numéricos y almacenarlos en las variables <b>A, B, C y D</b> respectivamente.</li>
+                <li>El algoritmo debe imprimir cual es el mayor valor y cual es el menor valor.</li>
+                <li>Recuerde verificar que los cuatro valores introducidos por el teclado sean valores distintos.</li>
+                <li>Crear un mensaje de alerta en caso que se detecte la introducción de valores iguales.</li>
+            </ul>
+            </p>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Ingrese el Valor A :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="a" onkeypress="return ValidaSoloNumeros();" maxlength="7">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ingrese el Valor B :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="b" onkeypress="return ValidaSoloNumeros();" maxlength="7">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ingrese el Valor C :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="c" onkeypress="return ValidaSoloNumeros();" maxlength="7">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Ingrese el Valor D :</label>
+                    <input type="text" class="form-control" placeholder="(*) Escriba aquí ..." id="d" onkeypress="return ValidaSoloNumeros();" maxlength="7">
+                </div>
+
+                <div class="mb-4 row" id="respuesta_ejercicio2"></div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="image/preload.gif" width="20" id="preload_ejercicio2" style="display: none;">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="button" class="btnSubmit" value="Calcular" id="ejercicio2">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="button" class="btnSubmit" value="Borrar" id="reset_ejercicio2">
+                        </div>
+                        <div class="col-md-4">
+                            <a href="image/DF_Ejercicio2_U2M2.png" class="btn btn-dark btn-md btn-block btnSubmit" target="_blank">Diagrama de Flujo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0">
+                    <center><b class="complete">Complete los campos obligatorios (*) para continuar.</b></center>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br><br>
+            <center>
+                <img src="image/react.jpg" width="70%">
+                <br><br>
+                <a href="image/Infografia_TiposProgramacion.jpg" target="_blank"><b><i>Clic aquí para ver la Infografía de la Actividad 1</i></b></a>
+                <br><br>
+                <h6><b>Copyright © 2022. Desarrollado por David Esteban Martinez Moreno</b></h6>
+            </center>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>
